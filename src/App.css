@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+@media (min-width:320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (min-width:481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (min-width:641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (min-width:961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+}
+
+body {
+  background-color: beige;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-container {
+  background-color: #c8c824;
+  padding: 20px;
+  width: fit-content;
+  margin: auto;
+}
+
+.layer1 {
+  display: flex;
+  padding: 3%;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-input input,
+.description-input input {
+  padding: 10px 25px;
+  padding-left: 5px;
+  border: none;
+  outline: none;
+}
+
+.add-button button {
+  padding: 10px 10px;
+  border: none;
+  transition: 0.3s;
+}
+
+.add-button button:hover {
+  color: #fff;
+  background-color: #3f3f3f;
+  cursor: pointer;
+}
+
+.layer2 button {
+  padding: 10px 10px;
+  border: none;
+  transition: 0.3s;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.active {
+  color: #fff;
+  background-color: #3f3f3f;
+}
+
+.layer3 {
   display: flex;
   flex-direction: column;
+}
+
+.todo-list {
+  margin-top: 10px;
+  background-color: #ffffff;
+  padding-left: 2%;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-content h3{
+  color: #3f3f3f;
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-buttons{
+  margin-right: 2%;
+}
+
+#delete,#done{
+  color: #3f3f3f;
+  transform: scale(1.5);
+  margin: 0px 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#delete:hover{
+  color: red;
+  transform: scale(1.6);
+}
+
+#done:hover{
+  color: green;
+  transform: scale(1.6);
 }
