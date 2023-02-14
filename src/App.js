@@ -44,7 +44,6 @@ function App() {
       <h1>Todo List</h1>
       <div className="todo-container">
         <div className="layer1">
-          <form className="layer1" action="reset">
           <div className="title-label"><label>Title</label></div>
           <div className="title">
             <div className="title-input"><input type="text" placeholder='Enter the title' value={title} onChange={(e) => setTitle(e.target.value)} /></div>
@@ -54,7 +53,6 @@ function App() {
             <div className="description-input"><input type="text" placeholder='Enter the description' value={description} onChange={(e) => setDescription(e.target.value)} /></div>
           </div>
           <div className="add-button"><button onClick={handleAdd}>Add</button> </div>
-          </form>
         </div>
         <hr color='black' />
         <div className="layer2">
